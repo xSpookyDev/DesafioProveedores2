@@ -13,7 +13,7 @@ public class Conexion {
 		try {
 			Class.forName("org.postgresql.Driver");
 
-			con = DriverManager.getConnection("jdbc:postgresql://localhost:5432/DesafioJSP", "postgres", "djdream3");
+			con = DriverManager.getConnection("jdbc:postgresql://localhost:5432/DesafioJSP", "postgres", "clavefalsa");
 			boolean isValid = con.isValid(50000);
 			System.out.println(isValid ? "Test OK POSTGRESQL" : "Test Failes POSTGRESQL");
 			
